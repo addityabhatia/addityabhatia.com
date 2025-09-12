@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; background: #f5f5f5; }
+  #content { display: none; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h2>fill in the blank:  anony _ _ _ s(hint:anonymous thank me later)</h2>
+<input type="password" id="pass" placeholder="type cutie">
+<button onclick="checkPassword()">submit</button>
+
+<div id="content">
+  <h1>nice cutie,heres ur present</h1>
+<a href="steptwo.html">here</a>
+
+</div>
+
+<script>
+function checkPassword() {
+  const password = document.getElementById('pass').value;
+  if(password === "mou") { // change "mou" to whatever u want
+    document.getElementById('content').style.display = "block";
+  } else {
+    alert("wrong");
+  }
+}
+</script>
+
+</body>
+</html>

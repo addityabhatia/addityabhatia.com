@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; background: #f5f5f5; }
+  #content { display: none; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h2>decode and enter the password</h2>
+<input type="password" id="pass" placeholder="password">
+<button onclick="checkPassword()">submit</button>
+
+<div id="content">
+  <h1>here</h1>
+<a href="three_or_you_can_right_3.html">three_or_you_can_right_3</a>
+
+</div>
+
+<script>
+function checkPassword() {
+  const password = document.getElementById('pass').value;
+  if(password === "decode") { // change "mou" to whatever u want
+    document.getElementById('content').style.display = "block";
+  } else {
+    alert("wrong");
+  }
+}
+</script>
+
+</body>
+</html>

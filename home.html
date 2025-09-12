@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aditya Bhatia</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      text-align: center;
+      background: #fff;
+      color: #000;
+    }
+    h1 {
+      font-size: 40px;
+      font-style: italic;
+      margin-top: 30px;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 700px;
+      width: 90%;
+      height: auto;
+    }
+    .time {
+      font-style: italic;
+      color: #000080;
+      margin-top: 15px;
+    }
+    .nav {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .nav a {
+      color: #000080;
+      text-decoration: none;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>ADITYA BHATIA</h1>
+
+<img src="homeimage.jpg" alt="Aditya Bhatia" style="width:500px; filter: contrast(1.2) saturate(1.2) sepia(0.2) brightness(1.05);">
+
+
+  <!-- Time in India -->
+  <div class="time">
+    TIME(INDIA) - <span id="time"></span> IST
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <a href="2about.html">about</a> // 
+    <a href="faq.html">faq</a> // 
+    <a href="blog.html">blog</a> // 
+    <a href="socials.html">socials</a> // 
+    <a href="contact.html">contact</a>
+  </div>
+
+  <script>
+    function updateTime() {
+      const options = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      const formatter = new Intl.DateTimeFormat([], options);
+      document.getElementById('time').textContent = formatter.format(new Date());
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+</body>
+</html>
