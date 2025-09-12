@@ -1,0 +1,93 @@
+<h1>⚡ Git + GitHub + VS Code (Baby Steps Guide)</h1>
+
+<hr>
+<h2>🔹 First: The Meaning of Each Command</h2>
+
+<pre>
+git init                → Starts Git inside your folder (makes it a repo)
+git add .               → Tells Git “track all the files in this folder”
+git commit -m "msg"     → Saves a snapshot of your files with a message
+git branch -M main      → Makes sure your main branch is called "main"
+git remote add origin &lt;URL&gt; → Connects your folder to a GitHub repo
+git push -u origin main → Sends your snapshot to GitHub
+</pre>
+
+<p>Replace &lt;URL&gt; with your GitHub repo link:<br>
+<code>https://github.com/YOURNAME/REPO-NAME.git</code></p>
+
+<p>Example:<br>
+<code>https://github.com/addityabhatia/coolsite.git</code></p>
+
+<hr>
+<h2>🔹 Snapshot & Commit Message</h2>
+
+<p>A commit = snapshot (like a time machine copy of your project).<br>
+The message = label for that snapshot.</p>
+
+<p>Examples:</p>
+<ul>
+  <li>"first commit" → first snapshot</li>
+  <li>"added navbar to home.html" → added navbar</li>
+  <li>"fixed CSS bug on mobile" → fixed CSS issue</li>
+</ul>
+
+<p>Where it shows up:</p>
+<ul>
+  <li>On GitHub repo history</li>
+  <li>In VS Code Source Control (commit history)</li>
+  <li>In git log</li>
+</ul>
+
+<hr>
+<h2>🔹 Doing It in VS Code Git Panel (No Commands)</h2>
+
+<h3>✅ First-Time Commit & Publish:</h3>
+<ol>
+  <li>Open folder in VS Code: File → Open Folder… → choose site folder</li>
+  <li>Open Source Control: Sidebar → Source Control (branch/Y icon) OR Ctrl+Shift+G</li>
+  <li>Initialize repo: If "Initialize Repository" shows → click it</li>
+  <li>Make a change: Edit any file (example: add &lt;!-- test --&gt;) → Save (Ctrl+S)</li>
+  <li>Stage changes:
+    <ul>
+      <li>Click + next to file, OR</li>
+      <li>Click + by CHANGES to stage all</li>
+    </ul>
+  </li>
+  <li>Write commit message: Example: Initial commit</li>
+  <li>Commit: Click ✓ (checkmark) → snapshot saved locally</li>
+  <li>Publish branch to GitHub: Click Publish Branch → follow prompts
+      <br>If asked for repo URL → paste GitHub repo link
+  </li>
+  <li>Confirm: Go to <a href="https://github.com/YOURNAME/REPO-NAME" target="_blank">GitHub repo</a> → files appear</li>
+</ol>
+
+<hr>
+<h3>✅ Every Subsequent Commit (update project):</h3>
+<ol>
+  <li>Edit files → Save (Ctrl+S)</li>
+  <li>Open Source Control (Ctrl+Shift+G)</li>
+  <li>Stage changes (click +)</li>
+  <li>Write commit message (example: Fix hero image size)</li>
+  <li>Commit (✓ checkmark)</li>
+  <li>Push (click Sync ↻ in bottom-left OR … → Push)</li>
+  <li>Check GitHub → code updated</li>
+  <li>If linked to Netlify → auto-deploys live site</li>
+</ol>
+
+<hr>
+<h2>🔹 Helpful Extras</h2>
+<ul>
+  <li>View diff: click a file in Source Control → see old vs new</li>
+  <li>Discard changes: right-click file → Discard Changes (undo edit)</li>
+  <li>Pull before working: click Sync first if editing repo from another device</li>
+  <li>Conflicts: choose Accept Current / Accept Incoming / Accept Both → then stage → commit → push</li>
+  <li>If "Publish Branch" doesn’t show: … → Remote → Add Remote → paste GitHub URL → Push</li>
+</ul>
+
+<hr>
+<h2>🔹 One-Line Daily Cheat Sheet</h2>
+<pre>
+Edit → Save (Ctrl+S)
+Source Control → Stage (+) → Write message → ✓ Commit
+Push/Sync (↻) → Done → Netlify redeploys
+</pre>
