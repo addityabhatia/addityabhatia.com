@@ -1,0 +1,101 @@
+# ⚡ Git + GitHub + VS Code 
+
+------------------------------------------
+🔹 First: The Meaning of Each Command
+------------------------------------------
+
+git init                → Starts Git inside your folder (makes it a repo)
+git add .               → Tells Git “track all the files in this folder”
+git commit -m "msg"     → Saves a snapshot of your files with a message
+git branch -M main      → Makes sure your main branch is called "main"
+git remote add origin <URL> → Connects your folder to a GitHub repo
+git push -u origin main → Sends your snapshot to GitHub
+
+Replace <URL> with your GitHub repo link:
+https://github.com/YOURNAME/REPO-NAME.git
+
+Example:
+https://github.com/addityabhatia/coolsite.git
+
+------------------------------------------
+🔹 Snapshot & Commit Message
+------------------------------------------
+
+A commit = snapshot (like a time machine copy of your project).
+The message = label for that snapshot.
+
+Examples:
+"first commit"                → first snapshot
+"added navbar to home.html"   → added navbar
+"fixed CSS bug on mobile"     → fixed CSS issue
+
+Where it shows up:
+- On GitHub repo history
+- In VS Code Source Control (commit history)
+- In git log
+
+------------------------------------------
+🔹 Doing It in VS Code Git Panel (No Commands)
+------------------------------------------
+
+✅ First-Time Commit & Publish:
+
+1. Open folder in VS Code:
+   File → Open Folder… → choose site folder
+
+2. Open Source Control:
+   Sidebar → Source Control (branch/Y icon) OR Ctrl+Shift+G
+
+3. Initialize repo:
+   If "Initialize Repository" shows → click it
+
+4. Make a change:
+   Edit any file (example: add <!-- test -->) → Save (Ctrl+S)
+
+5. Stage changes:
+   - Click + next to file, OR
+   - Click + by CHANGES to stage all
+
+6. Write commit message:
+   Example: Initial commit
+
+7. Commit:
+   Click ✓ (checkmark) → snapshot saved locally
+
+8. Publish branch to GitHub:
+   Click Publish Branch → follow prompts
+   If asked for repo URL → paste GitHub repo link
+
+9. Confirm:
+   Go to https://github.com/YOURNAME/REPO-NAME → files appear
+
+------------------------------------------
+✅ Every Subsequent Commit (update project):
+------------------------------------------
+
+1. Edit files → Save (Ctrl+S)
+2. Open Source Control (Ctrl+Shift+G)
+3. Stage changes (click +)
+4. Write commit message (example: Fix hero image size)
+5. Commit (✓ checkmark)
+6. Push (click Sync ↻ in bottom-left OR … → Push)
+7. Check GitHub → code updated
+8. If linked to Netlify → auto-deploys live site
+
+------------------------------------------
+🔹 Helpful Extras
+------------------------------------------
+
+- View diff: click a file in Source Control → see old vs new
+- Discard changes: right-click file → Discard Changes (undo edit)
+- Pull before working: click Sync first if editing repo from another device
+- Conflicts: choose Accept Current / Accept Incoming / Accept Both → then stage → commit → push
+- If "Publish Branch" doesn’t show: … → Remote → Add Remote → paste GitHub URL → Push
+
+------------------------------------------
+🔹 One-Line Daily Cheat Sheet
+------------------------------------------
+
+Edit → Save (Ctrl+S)
+Source Control → Stage (+) → Write message → ✓ Commit
+Push/Sync (↻) → Done → Netlify redeploys
