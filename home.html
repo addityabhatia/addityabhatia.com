@@ -38,13 +38,26 @@
     .nav a:hover {
       text-decoration: underline;
     }
+    .projects-link {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 20px;
+      margin-top: 15px;
+      display: inline-block;
+      color: red;
+      text-decoration: none;
+    }
+    .projects-link:hover {
+      text-decoration: underline;
+    }
   </style>
+  <!-- Add Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>ADITYA BHATIA</h1>
-
-<img src="homeimage.jpg" alt="Aditya Bhatia" style="width:500px; filter: contrast(1.2) saturate(1.2) sepia(0.2) brightness(1.05);">
-
+  <h1><i>ADITYA BHATIA</i></h1>
+<p>Minimal ≠ Simple.
+  Everything You Need. Nothing You Don’t.</p>
+  <img src="homeimage.jpg" alt="Aditya Bhatia" style="width:400px; filter: contrast(1.2) saturate(1.2) sepia(0.2) brightness(1.05);">
 
   <!-- Time in India -->
   <div class="time">
@@ -59,8 +72,14 @@
     <a href="socials.html">socials</a> // 
     <a href="contact.html">contact</a>
   </div>
-<p<u>Minimal ≠ Simple.
-Everything You Need. Nothing You Don’t.</u></p>
+
+
+
+  <!-- MY PROJECTS link in Press Start 2P -->
+  <p>
+    <a href="projects.html" class="projects-link"><u>MY PROJECTS</u></a>
+  </p>
+
   <script>
     function updateTime() {
       const options = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit' };
@@ -75,4 +94,3 @@ Everything You Need. Nothing You Don’t.</u></p>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="responsive.css">
 </head>
-

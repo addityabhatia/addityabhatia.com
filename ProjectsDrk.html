@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Bhatia — Projects</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=UnifrakturCook:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #f1f1f1;
+      font-family: 'Inter', sans-serif;
+      padding: 0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* CRT glow effect */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      line-height: 1.5;
+      text-shadow: 0 0 5px #ff00ff, 0 0 15px #fff;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #d1d1d1;
+    }
+
+    .chrome-cross {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 2.2rem;
+      color: #fff;
+      text-shadow: 0 0 6px #ff00ff, 0 0 12px #ff00ff;
+      margin: 1rem 0;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      height: 240px;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 1.6rem;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      transition: background 0.3s ease;
+    }
+
+    .card span {
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 0 6px #fff, 0 0 12px #ff00ff, 0 0 24px #ff00ff;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05) rotate(-1deg);
+      box-shadow: 0 0 20px #ff00ff, 0 0 40px #ffffff55;
+    }
+
+    .card:hover::after {
+      background: rgba(0,0,0,0.25);
+    }
+
+    /* Old school cursor effect */
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background: #ff00ff;
+      margin-left: 4px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+      font-family: 'Press Start 2P', cursive;
+      letter-spacing: 2px;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 1rem;
+      }
+      .card {
+        font-size: 1.2rem;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HEY, I’M ADITYA BHATIA<br>AND THESE ARE SOME PROFESSIONAL & FUN PROJECTS I MADE<span class="cursor"></span></h1>
+    <div class="chrome-cross"> ✝ </div>
+  </header>
+
+  <div class="projects-grid">
+    <a href="https://example.com/project1" class="card" style="background-image: url('project1.jpg');">
+      <span>Cyber Dreams</span>
+    </a>
+    <a href="https://example.com/project2" class="card" style="background-image: url('https://picsum.photos/id/1011/600/400');">
+      <span>Pixel Chaos</span>
+    </a>
+    <a href="https://example.com/project3" class="card" style="background-image: url('https://picsum.photos/id/1015/600/400');">
+      <span>Neon Nights</span>
+    </a>
+    <a href="https://example.com/project4" class="card" style="background-image: url('https://picsum.photos/id/1025/600/400');">
+      <span>Dark Fantasy</span>
+    </a>
+    <a href="https://example.com/project5" class="card" style="background-image: url('https://picsum.photos/id/1035/600/400');">
+      <span>Terminal Dreams</span>
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Aditya Bhatia ✝ All Rights Reserved ✝ Stay 0p1um
+  </footer>
+</body>
+</html>
