@@ -1,0 +1,32 @@
+/* Tablet screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* scale text */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto; /* prevent overflow */
+  }
+
+  .container, .section, .box {
+    width: 100%;   /* make blocks stack */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* menus stack vertically */
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column; /* stack items */
+  }
+}
